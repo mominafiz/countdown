@@ -42,7 +42,6 @@ const Countdown = (props) => {
 		  diff -= timeLeft.min * 60;
 		}
 		timeLeft.sec = diff;
-	
 		return timeLeft;
 	}, []);
 
@@ -53,33 +52,41 @@ const Countdown = (props) => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			const countdownDate = calculateCountDown(date);
-			countdownDate ? setCountDown(date) : stop(interval);
+			setCountDown(countdownDate)
 		}, 1000)
 
 		return () => {
 			stop(interval);
 		}
 	}, [date, calculateCountDown, setCountDown, stop]);
+	
+	const addLeadingZeros = (value) => {
+		value = String(value);
+		while (value.length < 2) {
+		  value = '0' + value;
+		}
+		return value;
+	}
 
 	return (
 		  <div className={styles.Countdown}>
 			<span className={styles.countdownCol}>
-			  <strong>{this.addLeadingZeros(countDown.days)}</strong>
+			  <strong>{addLeadingZeros(countDown.days)}</strong>
 			  <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
 			</span>
 	
 			<span className={styles.countdownCol}>
-			  <strong>{this.addLeadingZeros(countDown.hours)}</strong>
+			  <strong>{addLeadingZeros(countDown.hours)}</strong>
 			  <span>Hours</span>
 			</span>
 	
 			<span className={styles.countdownCol}>
-			  <strong>{this.addLeadingZeros(countDown.min)}</strong>
+			  <strong>{addLeadingZeros(countDown.min)}</strong>
 			  <span>Min</span>
 			</span>
 	
 			<span className={styles.countdownCol}>
-			  <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+			  <strong>{addLeadingZeros(countDown.sec)}</strong>
 			  <span>Sec</span>
 			</span>
 		  </div>

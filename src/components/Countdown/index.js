@@ -1,1 +1,1 @@
-export { default as Countdown } from './CountdownClass';
+export { default as Countdown } from './Countdown';

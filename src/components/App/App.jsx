@@ -8,7 +8,7 @@ function App() {
         <h1>Countdown</h1>
       </header>
       <div>
-        <Countdown date='2020-12-24T00:00:00' />,
+        <Countdown date='2022-12-24T00:00:00' />,
       </div>
     </div>
   );

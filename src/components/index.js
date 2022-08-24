@@ -1,2 +1,2 @@
 export { Countdown } from './Countdown';
-export { App} from './App';
+export { App } from './App';
