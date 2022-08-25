@@ -1,0 +1,13 @@
+.datePicker {
+  overflow: visible;
+  margin: 0;
+  max-width: 100%;
+  flex: 1 0 auto;
+  outline: 0;
+  text-align: left;
+  padding: 0.6em 1em;
+  background: #fff;
+  border: 1px solid rgba(35, 35, 35, 0.15);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: var(--round-corner);
+}

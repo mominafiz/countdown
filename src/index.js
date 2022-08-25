@@ -6,11 +6,13 @@ import './index.css';
 import {App} from './components/App';
 import reportWebVitals from './reportWebVitals';
 import ButtonComponent from './components/Button/Button';
+import DateInput from './components/DateTimeInput/DateTimeInput';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-	<ButtonComponent>Test</ButtonComponent>
+	<ButtonComponent onPress={(event) => console.log({event})}>Test</ButtonComponent>
+	<DateInput />
   </React.StrictMode>,
   document.getElementById('root')
 );
