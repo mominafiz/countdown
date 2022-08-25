@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './FormField.module.css';
 
 
-const FormField = (props) => {
+const Flex = (props) => {
 	const {flowDirection} = props;
 	const flowDirectionStyle = flowDirection === 'row' ? styles.row : styles.column;
 
@@ -13,4 +13,4 @@ const FormField = (props) => {
 	);
 }
 
-export default FormField;
+export default Flex;
