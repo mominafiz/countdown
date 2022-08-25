@@ -1,0 +1,11 @@
+.label {
+	display: inline-block;
+    text-align: left;
+    line-height: 1em;
+    margin: 0 0.15em;
+    padding: 0.5em 0.8em;
+    color: rgba(0,0,0,0.6);
+    font-weight: 700;
+    margin-left: 0;
+	max-width: content;
+}
