@@ -14,10 +14,15 @@
     text-align: center;
     border-radius: var(--round-corner);
     user-select: none; /* disable user selection on the button */
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .button:hover {
 	background-color: grey;
     color: rgba(0,0,0,.8);
+}
+
+.button.disabled:hover, .button.disabled {
+	backgound-color: #e0e1e2 none; /* light grey */
+	pointer: none;
 }

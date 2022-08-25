@@ -9,3 +9,9 @@
     margin-left: 0;
 	max-width: content;
 }
+
+.label.modern {
+	background-color: green;
+	padding: 0.25em 0.5em;
+	fond-weight: 400;
+}

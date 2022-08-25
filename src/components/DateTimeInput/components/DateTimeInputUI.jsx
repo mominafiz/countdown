@@ -7,7 +7,7 @@ const DateTimeInputUI = (props) => {
             onChange={props.onChange}
             data-testid="target-datetime"
             type="datetime-local"
-            value={props.targetDate}
+            value={props.targetDate || new Date().toDateString()}
             className={styles.datePicker}
             min={props.targetDate}
             max={props.maxDate}

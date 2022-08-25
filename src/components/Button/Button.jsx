@@ -1,16 +1,12 @@
-import React, { useRef } from 'react';
-import { usePress } from 'react-aria';
+import React from 'react';
 import styles from './Button.module.css';
 
 const ButtonComponent = (props) => {
-	const { children } = props;
-	const ref = useRef();
-	const {pressProps} = usePress({
-		onPress: props.onPress
-	});
+	const { children, onClick, isDisabled } = props;
+	
 
 	return (
-		<button data-testid="button" className={styles.button} {...pressProps} ref={ref}>
+		<button data-testid="button" className={`${styles.button} ${isDisabled ? styles.disabled : ''}`} onClick={onClick} disabled={isDisabled}>
 			{children}
 		</button>
 	)
