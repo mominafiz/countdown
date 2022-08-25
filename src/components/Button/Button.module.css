@@ -1,0 +1,23 @@
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    background: #e0e1e2 none; /* light grey */
+    color: rgba(0,0,0,.6);
+    margin: 0 .25em 0 0;
+    padding: .75em 1.5em .75em;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: center;
+    border-radius: var(--round-corner);
+    user-select: none; /* disable user selection on the button */
+    font-size: 1rem;
+}
+
+.button:hover {
+	background-color: grey;
+    color: rgba(0,0,0,.8);
+}

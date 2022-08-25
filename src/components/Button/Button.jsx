@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { usePress } from 'react-aria';
-import {Button} from 'semantic-ui-react';
+import styles from './Button.module.css';
 
 const ButtonComponent = (props) => {
 	const { children } = props;
@@ -10,9 +10,9 @@ const ButtonComponent = (props) => {
 	});
 
 	return (
-		<Button data-testid="button" {...pressProps} ref={ref}>
+		<button data-testid="button" className={styles.button} {...pressProps} ref={ref}>
 			{children}
-		</Button>
+		</button>
 	)
 };
 
