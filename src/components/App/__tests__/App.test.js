@@ -4,6 +4,6 @@ import {App} from '..';
 describe('<App />', () => {
 	it('renders learn react link', () => {
 	  render(<App />);
-	  screen.getByText(/Countdown/i);
+	  screen.getByTestId('countDownTimerApp');
 	});
 });

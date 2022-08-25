@@ -1,2 +1,2 @@
-export { Countdown } from './Countdown';
+export { Countdown } from './StopCountdown';
 export { App } from './App';

@@ -3,11 +3,11 @@ import styles from './Flex.module.css';
 
 
 const Flex = (props) => {
-	const {flowDirection} = props;
+	const {flowDirection, className} = props;
 	const flowDirectionStyle = flowDirection === 'row' ? styles.row : styles.column;
 
 	return (
-		<div className={`${styles.container} ${flowDirectionStyle}`}>
+		<div className={`${styles.container} ${flowDirectionStyle} ${className || ''}`}>
 			{props.children}
 		</div>
 	);

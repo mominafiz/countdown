@@ -1,0 +1,4 @@
+.flexContainer {
+	border: 2px solid blue;
+	border-radius: var(--round-corner);
+}

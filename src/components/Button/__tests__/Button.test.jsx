@@ -17,7 +17,7 @@ describe('<ButtonComponent />', () => {
 		it('should fire click event and callback is called', async () => {
 			const buttonHandler = jest.fn();
 
-			render(<ButtonComponent onPress={buttonHandler}>Start</ButtonComponent>);
+			render(<ButtonComponent onClick={buttonHandler}>Start</ButtonComponent>);
 			const button = await screen.findByTestId('button');
 			fireEvent(button, new MouseEvent('click', { bubbles: true}));
 			expect(buttonHandler).toHaveBeenCalled();
